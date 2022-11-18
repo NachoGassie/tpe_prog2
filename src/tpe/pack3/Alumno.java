@@ -1,13 +1,11 @@
 package tpe.pack3;
 
 import java.util.ArrayList;
-// import tpe.Lista;
 
 public class Alumno extends Elem{
     private String apellido;
     private int edad;
     private int dni;
-    // private Lista <String> palabrasClave;
     private ArrayList <String> palabrasClave;
 
     public Alumno(String nombre, String apellido, int edad, int dni) {

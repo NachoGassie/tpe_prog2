@@ -11,17 +11,13 @@ public class MiIterador <T> implements Iterator <T>{
 
     @Override
     public boolean hasNext() {
-        //pregunta si hay un siguiente, ya que en next() pasamos al mismo;
         return cursor != null;
     }
 
     @Override
     public T next() {
-        //Guardo el primer valor;
         T valor = (T) cursor.getValor();
-        //Paso al segundo;
         cursor = cursor.getSiguiente();
-        //Retorno el primero;
         return valor;
     }
 }
